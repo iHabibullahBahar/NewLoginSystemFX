@@ -1,0 +1,26 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 1, 2023, 8:35:46 AM
+    Author     : Habib
+*/
+.root{
+    -fx-background-color:#331E38;
+}
+#rightPane
+{
+    -fx-background-color:#70A0AF;
+}
+#leftPane
+{
+    -fx-background-color:#A0C1B9;
+}
+#loginForm
+{
+    -fx-background-color:#A0C1B9;
+}
+
+
+
