@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.validation.ValidationFacade?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginsystem.Controller">
+   <children>
+      <Pane fx:id="rightPane" prefHeight="503.0" prefWidth="801.0">
+         <children>
+            <Label layoutX="172.0" layoutY="222.0" prefHeight="53.0" prefWidth="162.0" text="Welcome " textFill="#f8f5f5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcome_label" layoutX="334.0" layoutY="222.0" prefHeight="53.0" prefWidth="176.0" textFill="#f8f5f5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ValidationFacade layoutX="138.0" layoutY="49.0" />
+            <JFXTextArea layoutX="91.0" layoutY="36.0" />
+            <JFXButton layoutX="51.0" layoutY="421.0" onAction="#gosignup" style="-fx-background-color: #000000;" text="Sign up" textFill="#c9c6c6" />
+            <JFXButton layoutX="145.0" layoutY="421.0" onAction="#gologin" style="-fx-background-color: #000000;" text="Sign In" textFill="#c9c6c6" />
+            <JFXComboBox layoutX="582.0" layoutY="104.0" promptText="new" />
+         </children>
+      </Pane>
+      <Pane fx:id="leftPane" prefHeight="503.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>

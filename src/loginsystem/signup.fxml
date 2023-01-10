@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginsystem.Controller">
    <children>
-      <Pane fx:id="rightPane" layoutX="336.0" prefHeight="503.0" prefWidth="465.0">
+      <Pane fx:id="rightPane" prefHeight="503.0" prefWidth="465.0">
          <children>
             <Label layoutX="104.0" layoutY="220.0" text="User Id" textFill="#f6f2f2">
                <font>
@@ -23,16 +23,28 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="userId" layoutX="187.0" layoutY="217.0" />
-            <PasswordField fx:id="passId" layoutX="187.0" layoutY="257.0" />
-            <Button layoutX="187.0" layoutY="313.0" mnemonicParsing="false" onAction="#login" text="Login" />
-            <Hyperlink layoutX="180.0" layoutY="356.0" onAction="#gosignup" text="Don't  have a account? signup" textFill="#f8f6f6">
+            <TextField fx:id="su_userId" layoutX="187.0" layoutY="217.0" />
+            <PasswordField fx:id="su_passId" layoutX="187.0" layoutY="257.0" />
+            <Button layoutX="187.0" layoutY="342.0" mnemonicParsing="false" onAction="#signup" text="Sign Up" />
+            <TextField fx:id="su_email" layoutX="186.0" layoutY="295.0" />
+            <Label layoutX="186.0" layoutY="144.0" text="Sign Up" textFill="#e9e3e3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="185.0" layoutY="378.0" onAction="#gologin" text="Do you have a account? login" textFill="#f8f6f6">
                <font>
                   <Font size="14.0" />
                </font>
             </Hyperlink>
+            <Label fx:id="su_status_label" layoutX="149.0" layoutY="427.0" prefHeight="17.0" prefWidth="246.0" textFill="#f8f6f6" />
          </children>
       </Pane>
-      <Pane fx:id="leftPane" prefHeight="503.0" prefWidth="341.0" />
+      <Pane fx:id="leftPane" layoutX="459.0" prefHeight="503.0" prefWidth="341.0" />
+      <Label layoutX="104.0" layoutY="299.0" text="Email" textFill="#f6f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
