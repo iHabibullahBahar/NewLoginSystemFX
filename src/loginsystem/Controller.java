@@ -29,7 +29,7 @@ public class Controller {
     private Scene scene;
     
     String logInUserName="";
-    int logInCondition = 0;
+    int logInCondition = 00;
     
     //Login Form FXML elements
     @FXML
